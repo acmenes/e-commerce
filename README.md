@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Fashionably
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Fashionably is my take on a mock e-commerce app for fashion shopping. I built it in order to continue studying React, and to get practice building an e-commerce app.
+
+# User flows
+Users can log in, add items to their cart, see a total amount for their cart, and check out.
+
+# Tech stack
+React for now, with a mock backend created with JSON. 
+This app also makes use of Bulma for styling.
 
 ## Available Scripts
 
@@ -13,6 +22,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+Note you have to run the backend as well: ./node_modules/.bin/json-server-auth ./backend/db.json --port 3001
 
 ### `npm test`
 

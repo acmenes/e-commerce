@@ -112,5 +112,25 @@
       "shortDesc": "You can wear them to work or brunch or work brunch",
       "description": "Chinos, like khakis but without the pleats. These pants even iron themselves! Kind of wild."
     }
+  ],
+  "tags": [
+    {
+      "name": "pants"
+    },
+    {
+      "name": "shorts"
+    },
+    {
+      "name": "shirts"
+    },
+    {
+      "name": "accessories"
+    },
+    {
+      "name": "hats"
+    },
+    {
+      "name": "footwear"
+    }
   ]
 }

@@ -17,7 +17,9 @@ export default class App extends Component {
     this.state = {
       user: null,
       cart: {},
-      products: []
+      cartTotal: 0,
+      products: [],
+      tags: ["pants", "shirts", "accessories", "hats", "shorts", "shoes"]
     };
     this.routerRef = React.createRef();
   }
@@ -30,7 +32,7 @@ export default class App extends Component {
 
   addToCart = cartItem => {
     let cart = this.state.cart;
-    let flashedMsg = { flash: { status: 'is-success', msg: 'Please enter name and price' }}
+    let cartTotal = this.state.cartTotal
     if (cart[cartItem.id]) {
       cart[cartItem.id].amount += cartItem.amount;
     }else {
@@ -40,20 +42,28 @@ export default class App extends Component {
       cart[cartItem.id].amount = cart[cartItem.id].product.stock
     }
     localStorage.setItem("cart", JSON.stringify(cart));
-    this.setState({ cart, flashedMsg })
+    cartTotal = cartTotal + cart[cartItem.id].product.price;
+    console.log(cartTotal)
+    this.setState({ cart, cartTotal, flash: { status: 'is-success', msg: 'Item added to cart' }})
+    alert(`${cartItem.id} added to cart`)
   }
 
   removeFromCart = cartItemId => {
     let cart = this.state.cart;
+    let itemPrice = cart[cartItemId].product.price;
+    console.log(itemPrice)
+    let cartTotal = this.state.cartTotal
     delete cart[cartItemId];
     localStorage.setItem("cart", JSON.stringify(cart));
-    this.setState({ cart })
+    cartTotal = cartTotal - itemPrice
+    this.setState({ cart, cartTotal })
   }
 
   clearCart = () => {
     let cart = {};
+    let cartTotal = 0
     localStorage.removeItem("cart")
-    this.setState({ cart })
+    this.setState({ cart, cartTotal })
   }
 
   checkout = () => {
@@ -77,6 +87,10 @@ export default class App extends Component {
 
     this.setState({ products })
     this.clearCart();
+  }
+
+  sortByTag = () => {
+    console.log("clicked on product")
   }
 
   async componentDidMount() {
@@ -129,7 +143,8 @@ export default class App extends Component {
           login: this.login,
           addProduct: this.addProduct,
           clearCart: this.clearCart,
-          checkout: this.checkout
+          checkout: this.checkout,
+          sortByTag: this.sortByTag
         }}
       >
       <Router ref={this.routerRef}>

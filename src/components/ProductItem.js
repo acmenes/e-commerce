@@ -19,8 +19,9 @@ const ProductItem = props => {
                         <b style={{ textTransForm: "capitalize" }}>
                             {product.name}{ " " }
                             <span className="tag is-primary">${product.price}</span>
-                            ||
-                            <span className="tag is-secondary">{product.category}</span>
+                            { "  " }
+                            <span className="tag is-light is-normal is-rounded" 
+                            onClick={props.sortByTag()}>{product.category}</span>
                         </b>
                         <div>{product.shortDesc}</div>
                             {product.stock > 0 ? (
