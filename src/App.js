@@ -30,6 +30,7 @@ export default class App extends Component {
 
   addToCart = cartItem => {
     let cart = this.state.cart;
+    let flashedMsg = { flash: { status: 'is-success', msg: 'Please enter name and price' }}
     if (cart[cartItem.id]) {
       cart[cartItem.id].amount += cartItem.amount;
     }else {
@@ -39,7 +40,7 @@ export default class App extends Component {
       cart[cartItem.id].amount = cart[cartItem.id].product.stock
     }
     localStorage.setItem("cart", JSON.stringify(cart));
-    this.setState({ cart })
+    this.setState({ cart, flashedMsg })
   }
 
   removeFromCart = cartItemId => {
@@ -139,7 +140,7 @@ export default class App extends Component {
             aria-label="main navigation"
           >
             <div className="navbar-brand">
-              <b className="navbar-item is-size-4">One Stop Shopping</b>
+              <b className="navbar-item is-size-4">Fashionably</b>
                 <label
                   role="button"
                   class="navbar-burger burger"

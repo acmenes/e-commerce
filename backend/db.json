@@ -14,51 +14,103 @@
   "products": [
     {
       "id": "hdmdu0t80yjkfqselfc",
-      "name": "shoes",
+      "name": "Foot hats",
+      "image": "https://picsum.photos/128",
       "stock": 10,
       "price": 399.99,
+      "category": "footwear",
       "shortDesc": "A comfy yet stylish pair of shoes",
       "description": "Shoes... you have to wear them, because nobody wants to see your feet. Ever yearned for a pair of shoes that you can wear anywhere? To the office? At the tennis court? On a fancy date? On a terrible date? To the cranberry bog? Well, these are the shoes for you! Available in over 2 colors."
     },
     {
       "id": "3dc7fiyzlfmkfqseqam",
-      "name": "bags",
+      "name": "It's a handbag",
+      "image": "https://picsum.photos/128",
       "stock": 20,
       "price": 299.99,
+      "category": "accessories",
       "shortDesc": "Almost imitation Michael Cors bag",
       "description": "You ever want to just flaunt your style but at the deep discounts suspiciously offered by stores such as TJMaxx? Well now's your chance to own this... genuine Michael Cors bag. Nothing sus at all! This bag allows you to put stuff that fits in the bag in the bag."
     },
     {
       "id": "aoe8wvdxvrkfqsew67",
-      "name": "shirts",
+      "name": "A fine shirt",
+      "image": "https://picsum.photos/128",
       "stock": 15,
       "price": 149.99,
+      "category": "shirts",
       "shortDesc": "Goes over your head and covers your chest",
       "description": "Ever get threatened to be removed from a McDonals because you insisted on not wearing a shirt? Well, you will feel differently about your aversion to covering up your chest when you try on one of these shirts. Made from the finest of materials (nylon, spandex, cotton, and maybe latex), this shirt can be worn anywhere. It never gets dirty and it always looks fashionable. Never get thrown out of a fast food restaurant ever again!"
     },
     {
       "id": "bmfrurdkswtkfqsf15j",
-      "name": "shorts",
+      "name": "Short Shorts",
+      "image": "https://picsum.photos/128",
       "stock": 5,
       "price": 109.99,
+      "category": "shorts",
       "shortDesc": "Who wears short shorts? You wear short shorts!",
       "description": "Prepare yourself for Hot Girl Summer(TM) all year round! Nevermind the fact that temperatures in your area may make it unwise to wear such short shorts at certain times of year. These shorts are spicy, they'll keep you warm."
     },
     {
       "id": "lmw41k415xmkw40en0f",
       "name": "Crab Hat",
+      "image": "https://picsum.photos/128",
       "price": "99.99",
       "stock": "20",
+      "category": "hats",
       "shortDesc": "YOUR CRAB LEADER COMMANDS YOU",
       "description": "YOUR CRAB LEADER COMMANDS YOU TO WEAR THIS STYLISH HAT. IT ALSO KEEPS YOUR HEAD DRY."
     },
     {
       "id": "hzo4oz2h5bdkw40g225",
       "name": "Sweater with cat hair on it",
+      "image": "https://picsum.photos/128",
       "price": "29.99",
       "stock": "100",
+      "category": "shirts",
       "shortDesc": "For the cat enthusiast",
       "description": "Each sweater comes meticulously prepared with a swath of cat hair all over it. "
+    },
+    {
+      "id": "bp03ur49yzkwarusj5",
+      "name": "Ironic T-shirt",
+      "image": "https://picsum.photos/128",
+      "price": "35.99",
+      "stock": "25",
+      "category": "shirts",
+      "shortDesc": "Imagine having a shirt that expresses how you feel.",
+      "description": "Imagine having moods so simple that one shirt just encapsulates you! You live for the weekends, but you're wearing your \"I live for the weekends\" shirt Monday at the office. Oh yeah. "
+    },
+    {
+      "id": "3fm8wwucvbckwarzsk2",
+      "name": "Previously used concert Tee",
+      "image": "https://picsum.photos/128",
+      "price": "59.99",
+      "stock": "67",
+      "category": "shirts",
+      "shortDesc": "Still smells a little like 40 year old weed",
+      "description": "Each of our previously used concert tees has been meticulously checked for the perfect proportion of weed stank, beer stank, and armpit stank. Now you to can parade around in a shirt representing a band that you don't actually listen to. Or maybe you do listen to them. Just don't let anyone force you to name 3 songs."
+    },
+    {
+      "id": "t1qimsz9q1pkwasgonw",
+      "name": "Totally \"real\" wallet",
+      "image": "https://picsum.photos/128",
+      "price": "420.00",
+      "stock": "10000",
+      "category": "accessories",
+      "shortDesc": "A totally \"real\" wallet that holds \"Real\" money",
+      "description": "You can pay for it in BTC if you want. This wallet only exists on the interwebs and it holds all your \"money\""
+    },
+    {
+      "id": "tzgli7475rgkwastiqc",
+      "name": "Chinos",
+      "price": "49.99",
+      "image": "https://picsum.photos/128",
+      "stock": "70",
+      "category": "pants",
+      "shortDesc": "You can wear them to work or brunch or work brunch",
+      "description": "Chinos, like khakis but without the pleats. These pants even iron themselves! Kind of wild."
     }
   ]
 }
